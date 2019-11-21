@@ -16,7 +16,7 @@ $query=$dbh->prepare($query);
 $query->bindParam(':id', $_SESSION['id'],PDO::PARAM_INT,7);
 $query->execute();
 $rows=$query->fetchAll(PDO::FETCH_ASSOC);
-$countOfNotes = 50;?>
+$countOfNotes = 30;?>
     <form>
         <p><input type="search" name="city" placeholder="Таромское">
             <input type="submit" value="Найти"></p>
